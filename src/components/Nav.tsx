@@ -31,7 +31,7 @@ export function Nav() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-line bg-background/85 backdrop-blur-xl">
-      <div className="mx-auto grid max-w-[1600px] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 md:px-10">
+      <div className="mx-auto grid max-w-[1920px] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 md:px-10">
         <a href="/" onClick={(e) => go(e)} className="label min-w-0 truncate text-foreground">
           Kamil Jamiolkowski
         </a>

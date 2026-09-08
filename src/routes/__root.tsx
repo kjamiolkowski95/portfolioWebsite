@@ -80,13 +80,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Kamil Jamiolkowski — UX/UI Designer for Games" },
+      { title: "Kamil Jamiolkowski Portfolio" },
       {
         name: "description",
         content: "Game UI and UX design portfolio — HUDs, menus and in-world interface systems.",
       },
       { name: "author", content: "Kamil Jamiolkowski" },
-      { property: "og:title", content: "Kamil Jamiolkowski — UX/UI Designer for Games" },
+      { property: "og:title", content: "Kamil Jamiolkowski Portfolio" },
       {
         property: "og:description",
         content: "Game UI and UX design portfolio — HUDs, menus and in-world interface systems.",
@@ -105,7 +105,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
     scripts: [{ children: themeInitScript }],
   }),

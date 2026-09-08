@@ -4,31 +4,48 @@ import biotech3 from "@/assets/work/biotech-3.jpg";
 import biotech4 from "@/assets/work/biotech-4.jpg";
 import biotech5 from "@/assets/work/biotech-5.jpg";
 import biotech6 from "@/assets/work/biotech-6.jpg";
-import iceThumb from "@/assets/work/ice-thumb.png";
 import ice1 from "@/assets/work/ice-1.jpg";
 import ice2 from "@/assets/work/ice-2.jpg";
 import ice3 from "@/assets/work/ice-3.jpg";
 import ice4 from "@/assets/work/ice-4.jpg";
 import ice5 from "@/assets/work/ice-5.jpg";
 import ice6 from "@/assets/work/ice-6.jpg";
+import iceThumb from "@/assets/work/ice-thumb.png.asset.json";
+import iceNew1 from "@/assets/work/ice-new-1.png.asset.json";
+import iceNew2 from "@/assets/work/ice-new-2.png.asset.json";
+import iceNew3 from "@/assets/work/ice-new-3.png.asset.json";
+import iceNew4 from "@/assets/work/ice-new-4.jpg.asset.json";
+import iceNew5 from "@/assets/work/ice-new-5.jpg.asset.json";
 import sanc1 from "@/assets/work/sanc-1.jpg";
 import sanc2 from "@/assets/work/sanc-2.png";
 import sanc3 from "@/assets/work/sanc-3.png";
 import sanc4 from "@/assets/work/sanc-4.png";
 import sanc5 from "@/assets/work/sanc-5.png";
 import sanc6 from "@/assets/work/sanc-6.png";
-import bfm1 from "@/assets/work/bfm-1.jpg";
-import bfm2 from "@/assets/work/bfm-2.jpg";
-import bfm3 from "@/assets/work/bfm-3.jpg";
-import bfm4 from "@/assets/work/bfm-4.jpg";
-import bfm5 from "@/assets/work/bfm-5.jpg";
-import bfm6 from "@/assets/work/bfm-6.jpg";
-import fs1 from "@/assets/work/fs-1.jpg";
-import fs2 from "@/assets/work/fs-2.jpg";
-import fs3 from "@/assets/work/fs-3.jpg";
-import fs4 from "@/assets/work/fs-4.jpg";
-import fs5 from "@/assets/work/fs-5.jpg";
-import fs6 from "@/assets/work/fs-6.jpg";
+import sancThumb from "@/assets/work/sanc-thumb.png.asset.json";
+import sancNew1 from "@/assets/work/sanc-new-1.png.asset.json";
+import sancNew2 from "@/assets/work/sanc-new-2.png.asset.json";
+import sancNew3 from "@/assets/work/sanc-new-3.png.asset.json";
+import sancNew4 from "@/assets/work/sanc-new-4.png.asset.json";
+import sancNew5 from "@/assets/work/sanc-new-5.png.asset.json";
+import bfmThumb from "@/assets/work/battlefield-thumb.png.asset.json";
+import bf1 from "@/assets/work/bf-1.png.asset.json";
+import bf2 from "@/assets/work/bf-2.png.asset.json";
+import bf3 from "@/assets/work/bf-3.png.asset.json";
+import bf4 from "@/assets/work/bf-4.png.asset.json";
+import bf5 from "@/assets/work/bf-5.png.asset.json";
+import fsThumb from "@/assets/work/forever-skies-thumb.png.asset.json";
+import fs1 from "@/assets/work/forever-1.png.asset.json";
+import fs2 from "@/assets/work/forever-2.png.asset.json";
+import fs3 from "@/assets/work/forever-3.png.asset.json";
+import fs4 from "@/assets/work/forever-4.png.asset.json";
+import aaaThumb from "@/assets/work/aaa-thumb.png.asset.json";
+import aaa4 from "@/assets/work/aaa-4.png.asset.json";
+import aaa5 from "@/assets/work/aaa-5.png.asset.json";
+import aaa6 from "@/assets/work/aaa-6.png.asset.json";
+import aaa1 from "@/assets/work/aaa-1.png.asset.json";
+import aaa2 from "@/assets/work/aaa-2.png.asset.json";
+import aaa3 from "@/assets/work/aaa-3.png.asset.json";
 import dust1 from "@/assets/work/dust-1.jpg";
 import dust2 from "@/assets/work/dust-2.jpg";
 import dust3 from "@/assets/work/dust-3.jpg";
@@ -42,53 +59,56 @@ export type CaseStudy = {
   title: string;
   tagline: string;
   cover: string;
-  type: string;
+  platform: string;
   year: string;
-  genre: string;
+  category: string;
   role: string;
   tools: string;
   duration: string;
-  overviewTitle: string;
-  overview: string;
   artDirectionTitle: string;
   artDirection: string;
   challenge: string;
   challengeDetail: string;
   approach: string;
   approachDetail: string;
+  summaryTitle: string;
+  summary: string;
   credits: string;
   shots: { src: string; caption: string }[];
   process?: { src: string; caption: string }[];
 };
 
-export const caseStudies: CaseStudy[] = [
+const caseStudiesUnordered: CaseStudy[] = [
   {
     slug: "biotech-corp",
     index: "01",
     title: "BioTech Corp",
-    tagline: "A corporate biotech database from a future that never left the 1990s.",
+    tagline: "BioTech Corp is a personal project in which I explored a retro-futuristic direction. I focused on portraying a database of a fictional biotech corporation, viewed through an interface built to resemble a CRT display. The project draws on iconic sci-fi films from the late 80s and early 90s, and the visual language reflects that era's take on technology.",
     cover: biotech1,
     platform: "Personal",
     year: "2026",
-    category: "Game / Concept",
+    category: "The Premise",
     role: "UI/UX Designer, Art Director",
     tools: "Figma",
     duration: "Self-initiated",
-    artDirectionTitle: "Retrofuturism, distilled to one colour",
+    artDirectionTitle: "Dehumanization by Design",
     artDirection:
-      "The aesthetic draws from a specific intersection of retrofuturism: dystopian corporate fiction where biological data is processed through outdated hardware. Key references include:\nBlade Runner (1982)\nAmber and orange terminal glow, grid overlays, scan-line aesthetics. The Voight-Kampff machine as a design reference for biological assessment UI.\nAlien / Aliens\nWeyland-Yutani corporation terminal UI: green or amber on black, dot-matrix typography, utilitarian layouts that feel institutionally indifferent.\nCyberpunk 2077\nThe concept of a corporate database that catalogs and quantifies humans as assets.",
-    challenge: "Build a fully realised visual language from scratch and never break the illusion.",
+      "In this fictional world, people seen through the corporation's eyes are assets. I wanted to focus on the pseudo-realistic visualizations and hardware framing, finding a bridge between realism and dehumanization. Alongside the already mentioned Blade Runner and Cyberpunk references mentioned earlier, I also drew on Weyland-Yutani from the \"Alien\" film universe, particularly its rather clinical approach to corporate branding.",
+    challenge: "The human and the machine",
     challengeDetail:
-      "BioTech Corporation is a self-initiated project built to demonstrate UI design and art direction skills within a fictional world. The premise: a corporate biotech database system from an alternate future that never left the 1990s.",
-    approach: "Hierarchy built entirely through brightness, inside one piece of fictional hardware.",
+      "I worked from the premise that once the player interacts with the machine, they're looking at an old but still-functioning computer screen, something that's been running long past its lifespan. I applied a monochromatic palette and styled the interface to look intentionally outdated to better sell the illusion.",
+    approach: "Tone & Influences",
     approachDetail:
-      "The project was executed as a series of high-fidelity static compositions, with full attention to rendering quality: glows, scan artifacts, hardware framing, and illustration all handled in-tool. All screens created in Figma.",
-    credits: "Self-initiated project — concept, art direction and interface design by Kamil Jamiolkowski",
+      "Going into this project, I asked myself: what if the original Blade Runner met Cyberpunk 2077? What kind of effect could that produce? Following that concept, I then designed everything to feel crude and unrefined, leaning into rough edges and visible seams to emphasize the abstraction and grotesqueness of the world.",
+    summaryTitle: "Closing Thoughts",
+    summary:
+      "BioTech Corporation was, at its core, an exploration of how much information can be communicated within constraints dictated by the logic of the world and the technology within it. Holding that assumption across every screen, keeping the outdated hardware, and the corporate coldness consistent with each other, was the real challenge. It's a small project, but it taught me how far a visual language can be pushed.",
+    credits: "SELF-INITIATED PROJECT",
     shots: [
-      { src: biotech2, caption: "Login — concentric reticle between logo and biometric scanner." },
-      { src: biotech3, caption: "Database search terminal, DOS boot sequence rendered faithfully." },
-      { src: biotech4, caption: "Identification record — the human as a database entry." },
-      { src: biotech5, caption: "Bio-scan in progress, wireframe subject and vitals strip." },
+      { src: biotech2, caption: "DATABASE FETCHING SCREEN" },
+      { src: biotech3, caption: "SPLASH SCREEN" },
+      { src: biotech4, caption: "IDENTIFICATION RECORD" },
+      { src: biotech5, caption: "BIO-SCAN IN PROGRESS" },
     ],
     process: [
       { src: biotech1, caption: "CRT hardware frame" },
@@ -100,174 +120,197 @@ export const caseStudies: CaseStudy[] = [
     slug: "project-ice",
     index: "02",
     title: "Project: ICE",
-    tagline: "The game is set in a harsh, frozen wasteland where a small group of survivors has taken refuge in an underground seed bank, now their shelter. For decades, they have struggled to endure the relentless forces of nature, fending off wild animals, diseases, and starvation. Mysteriously, supplies occasionally emerge in scattered locations across the icy landscape. A select group of searchers is tasked with finding these vital resources and returning them to the base. As the sole lifeline for survival, these prospectors are held in high regard and are essential to the community's survival.",
-    cover: iceThumb,
-    type: "Personal",
+    tagline:
+      "Project: ICE takes place in a frozen wasteland where a small group of survivors holds out in a converted underground seed bank. Supplies occasionally turn up scattered across the ice, and a select group of searchers (prospectors, essentially) are sent out to find them and bring them back. They're the only thing keeping the community alive.",
+    cover: iceThumb.url,
+    platform: "Personal",
     year: "2024",
-    genre: "Survival",
+    category: "Setting & Premise",
     role: "UI/UX Designer, Game Designer",
     tools: "Figma",
     duration: "Ongoing",
-    overviewTitle: "Story",
-    overview: "We play as a Seeker who loses his companion and gets badly injured during a supply run. With his supplies destroyed, he knows he won’t make it back to the bunker. As he lies dying in the snow, he notices fresh human footprints. That shouldn’t be possible, no one else is supposed to be outside. He wakes up later in the infirmary, alive and heavily bandaged. The medic tells him he was found unconscious and suffering from severe hypothermia just before reaching the bunker. Somehow, he survived. But the footprints remain unexplained.",
     artDirectionTitle: "Colder than the world outside",
     artDirection:
-      "The game features realistic and immersive graphics that bring the icy island landscape to life, complemented by detailed character models and carefully designed environments. Atmospheric lighting and dynamic weather effects further enhance the sense of immersion, creating a believable and engaging world.",
-    challenge: "Challenge",
+      "The UI leans monochromatic, with color reserved for state indicators such as health, warmth or danger. Everything else stays desaturated on purpose, in step with the icy, realistic environments and atmospheric lighting the game is built around. The interface is meant to match the feeling of isolation and practicality.",
+    challenge: "Constraints & Ownership",
     challengeDetail:
-      "Personal projects give me full ownership of every design decision. Without stakeholders or a creative director to guide the work, I have to challenge and justify my own decisions. This pushes me to think more critically and strengthens my design instincts. The game is heavily story-driven, and the narrative is still in its early stages. I’m building a story around survival, mystery, and human resilience, with the goal of making the narrative an important part of the gameplay and overall experience.",
-    approach: "Approach",
+      "Working on a self-initiated project means every decision is mine to make and justify. There's no creative director to push back, no stakeholder to set the bar. On one hand it could be freeing, but it also means holding myself to that same rigor on my own. The story was still forming as I designed around it: survival, isolation, and what's left of a person after both. I had to build the interface without a finished narrative to lean on.",
+    approach: "Building from the Ground Up",
     approachDetail:
-      "Pre-production covered three fronts: story structure and gameplay loop, visual direction through reference work, and early HUD and menu mockups that test information density against the stark environment. Only once the survival systems held up did the interface start taking shape around them.",
-    credits: "Self-initiated project — game design, narrative and interface design by me",
+      "Pre-production covered three fronts. First, the world itself, where I had to work out how warmth, resources, weather, and wildlife would interact. Second, visual direction, in which I leaned heavily on the Nordic landscape photography, field survival gear, and brutalist architecture. Third, HUD and menu mockups, testing how much information the player needs against the stark environment.",
+    summaryTitle: "Outcome & Reflection",
+    summary:
+      "Project: ICE is still ongoing, with the story and interface developing in parallel. The core constraint continues to show through every mockup so far and to guide the remaining screens.",
+    credits: "SELF-INITIATED PROJECT",
     shots: [
-      { src: ice3, caption: "Early HUD concept, exploration" },
-      { src: ice4, caption: "Example of a diegetic interface." },
-      { src: ice5, caption: "Example of a diegetic interface." },
+      { src: iceNew1.url, caption: "HUD CARRYING OXYGEN, HEALTH, COLD AND STORM WARNINGS" },
+      { src: iceNew2.url, caption: "BIO PARAMETERS AND VITALS ON A HANDHELD TABLET" },
+      { src: iceNew3.url, caption: "DIEGETIC NAVIGATION - HOLOGRAPHIC WRIST MAP " },
     ],
     process: [
-      { src: ice1, caption: "Moodboard" },
-      { src: ice2, caption: "Screen study"},
-      { src: ice6, caption: "HUD layering"},
+      { src: iceNew4.url, caption: "CONCEPT SHEET, ENVIRONMENT AND CHARACTER DESIGN EXPLORATION" },
+      { src: iceNew5.url, caption: "REFERENCE BOARD - TOPOGRAPHY, ARCHITECTURE AND THE FACILITY" },
     ],
   },
   {
     slug: "sancticide",
     index: "03",
     title: "Sancticide",
-    tagline: "UI systems for a dark post-apocalyptic fantasy RPG built on an existing book IP.",
-    cover: sanc1,
+    tagline:
+      "Sancticide is a dark post-apocalyptic fantasy RPG for PC, adapted from Michał Gołkowski's \"Komornik\" novels. It's set in a world on the brink of annihilation. My job as UI/UX Team Lead was to take that existing world and turn it into a working interface, leading the team from early exploration to production-ready assets in Unreal Engine 5.",
+    cover: sancThumb.url,
     platform: "PC",
     year: "2024",
-    category: "Action RPG",
+    category: "Setting & Scope",
     role: "UI/UX Team Lead",
-    tools: "Unreal Engine 5",
+    tools: "Figma, Unreal Engine 5",
     duration: "Full production cycle",
-    artDirectionTitle: "An artefact of a known world",
+    artDirectionTitle: "Visual Language & Typography",
     artDirection:
-      "Dark, ornate, weathered — but readable under gameplay pressure. The tone was agreed with the Art Director through thematic moodboards and alignment sessions before any wireframe existed, so the interface reads as an artefact of a world fans already knew from the books rather than a layer bolted on top of it.",
-    challenge: "Adapting an existing literary IP is harder than starting from scratch.",
+      "The UI runs on a dark palette (near-black panels, worn leather browns, and stone greys, with gold and amber accents), which aids to the world flavor. Typography leans serif and ornate to resemble an illuminated manuscript. Iconography stays tactile: swords, axes, parchment-style borders.",
+    challenge: "Constraints & Complexity",
     challengeDetail:
-      "The visual language had to belong to an established narrative universe while staying legible and responsive in real gameplay. On top of that, Sancticide is mechanically complex — skill trees, inventory, quest tracking, combat HUD — and all of it had to cohere into one design language without overwhelming the player.",
-    approach: "Deep reference work first, then every core system wireframed, prototyped and iterated.",
+      "Adapting an existing literary IP has its own challenges. The visual language had to feel like it belonged to a world readers already knew from the books, while making sense under gameplay conditions. Sancticide is also mechanically dense (skill trees, inventory, quest tracking, combat HUD) and all of it had to hold together as one coherent system.",
+    approach: "Process & Execution",
     approachDetail:
-      "I led design of all primary UI systems: health and stamina, skill trees, inventory, quest logs and map overlays. Each went through wireframe, prototype, stakeholder review and iteration before high-fidelity production, and I prepared and optimised every 2D asset for Unreal Engine 5 so fidelity and runtime performance held across target hardware. The UI shipped on schedule across all milestones, with internal playtests recording average task completion under eight seconds on core menu interactions.",
-    credits: "UI/UX team lead — in collaboration with the Art Director, developers, 3D artists and narrative design",
+      "I started with reference work to build moodboards and held alignment sessions with the Art Director to land on a shared tone. Once we agreed on \"dark, ornate, weathered\", I moved onto wireframing core player flows and led design on every primary system: health and stamina, skill trees, inventory, quest logs, and map overlays. I also prepared and optimized 2D assets for Unreal Engine 5 and ran cross-functional syncs with developers, 3D artists, and narrative designers.",
+    summaryTitle: "A Costly Lesson",
+    summary:
+      "Sancticide didn't land well at launch. The game's mechanics needed more polish than the studio's timeline and resources could support. It was a hard outcome to sit with, given how much work and time the whole team put into it. But it was also one of the more useful lessons of my career. Sometimes ambition outpaces capacity.",
+    credits: "UI/UX TEAM LEAD AT RED SQUARE GAMES",
     shots: [
-      { src: sanc2, caption: "Core menu architecture — ornate but readable." },
-      { src: sanc3, caption: "Skill tree, progression legible at a glance." },
-      { src: sanc4, caption: "Inventory management system." },
-      { src: sanc5, caption: "Quest log and map overlay states." },
+      { src: sancNew1.url, caption: "HUD" },
+      { src: sancNew2.url, caption: "INVENTORY SCREEN" },
+      { src: sancNew3.url, caption: "MAIN MENU" },
     ],
     process: [
-      { src: sanc6, caption: "Exploration" },
-      { src: sanc3, caption: "System design" },
-      { src: sanc4, caption: "Production" },
+      { src: sancNew4.url, caption: "MAP" },
+      { src: sancNew5.url, caption: "ABILITY WHEEL" },
     ],
   },
   {
     slug: "battlefield-mobile",
     index: "04",
     title: "Battlefield Mobile",
-    tagline: "Warheroes — a live-service progression and monetisation feature.",
-    cover: bfm1,
+    tagline:
+      "In this project, I worked on Warheroes, a monetization feature for Battlefield Mobile. The scope covered stakeholder requirements, user behavior analysis, feature logic, and final UI design.",
+    cover: bfmThumb.url,
     platform: "Mobile",
     year: "2023",
-    category: "Live Service FPS",
+    category: "Features & Scope",
     role: "UI/UX Designer",
-    tools: "Proprietary",
+    tools: "Figma",
     duration: "Feature cycle",
-    artDirectionTitle: "Elevated reward moments",
+    artDirectionTitle: "Visual Language",
     artDirection:
-      "The feature follows Battlefield Mobile's existing design language — high contrast, military-coded, kinetic — while the reward moments themselves get a deliberately elevated treatment so achievement reads as a distinct beat rather than another panel in the same visual register.",
-    challenge: "Motivate spending without making free-to-play players feel worked against.",
+      "Visual direction followed Battlefield Mobile's existing design system: high contrast, military-coded, kinetic. Reward moments within Warheroes received elevated treatment relative to the base UI, to signal achievement at the point of payoff.",
+    challenge: "Motivate Without Alienating",
     challengeDetail:
-      "Get that balance wrong in a live-service feature and you damage retention and revenue at the same time. For Warheroes the milestone reward structure had to feel genuinely achievable through play, with the paid path accelerating progress rather than gating it.",
-    approach: "Feature logic defined against real behaviour data before any visual design.",
+      "Monetization features must drive spending without punishing free-to-play users. Mishandled, this damages both retention and revenue. Warheroes required a reward structure achievable through play alone. Paid progress had to accelerate outcomes without gating them.",
+    approach: "Process",
     approachDetail:
-      "I gathered KPIs and business requirements from stakeholders, then mapped them against user behaviour data to find where players dropped off and which reward triggers actually sustained play. The resulting structure ran two parallel tracks: a free-to-earn path tied to in-game milestones and a premium track offering cosmetic and time-based advantages without locking core content. From there I built the full UI — milestone tracker, reward previews, purchase flows and confirmation states. The feature launched within its planned release window.",
-    credits: "In collaboration with the Battlefield Mobile UI/UX, monetisation and production teams",
+      "First, I defined feature logic. To do that, I collected KPIs and requirements from stakeholders and mapped them against user behavior data to identify drop-off points and effective reward triggers. The result was a two-track structure: a free path tied to milestones, and a premium path offering cosmetic and time-based advantages without locking core content. I then built the full UI for the feature: milestone tracker, reward previews, purchase flow and confirmation states.",
+    summaryTitle: "Outcome",
+    summary:
+      "Warheroes launched within the planned release window. The project gave me direct experience balancing business requirements against player experience within an existing monetization system.",
+    credits: "UX/UI DESIGNER AT DRAGONS' LAKE FOR EA",
     shots: [
-      { src: bfm2, caption: "Warheroes milestone tracker." },
-      { src: bfm3, caption: "Reward preview — free and premium tracks side by side." },
-      { src: bfm4, caption: "Purchase flow." },
-      { src: bfm5, caption: "Confirmation and reward moment treatment." },
+      { src: bf2.url, caption: "HERO LOADOUT" },
+      { src: bf3.url, caption: "HERO-SPECIFIC CURRENCY" },
+      { src: bf5.url, caption: "ITEMS SHOP" },
     ],
     process: [
-      { src: bfm6, caption: "Feature logic" },
-      { src: bfm3, caption: "Layout" },
-      { src: bfm5, caption: "Final" },
+      { src: bf1.url, caption: "SPLASH SCREEN" },
+      { src: bf4.url, caption: "REWARDS" },
     ],
   },
   {
     slug: "forever-skies",
     index: "05",
     title: "Forever Skies",
-    tagline: "A full survival HUD embedded inside the player's helmet.",
-    cover: fs1,
+    tagline: "Forever Skies is a first-person survival game set on a post-apocalyptic, ecologically ruined Earth. Players build, upgrade, and fly a high-tech airship, scavenging resources and crafting tools while searching for a cure to save humanity. I was a solo UI and UX Designer at Far From Home, working on the game's full interface.\u00a0",
+    cover: fsThumb.url,
     platform: "PC",
     year: "2023",
-    category: "Survival",
-    role: "Lead UI/UX Designer",
-    tools: "Unreal Engine",
+    category: "SETTING & ROLE",
+    role: "UI/UX Designer",
+    tools: "Figma, Unreal Engine",
     duration: "Full production cycle",
-    artDirectionTitle: "Real technology under real stress",
+    artDirectionTitle: "VISUAL LANGUAGE",
     artDirection:
-      "Clinical, functional, slightly worn — the look of real technology under real stress, agreed with the producer and Art Director from a moodboard of sci-fi cinema, military HUD systems and first-person survival games. The primary colour and typeface were already set when I joined; I proposed and refined a secondary palette so the primary reads as interface chrome while the secondary communicates state: critical, neutral, active.",
-    challenge: "Helmet-integrated UI sounds immersive; in practice it is a minefield.",
+      "The interface uses two palette layers: the primary palette forms the HUD's structural chrome, while the secondary palette carries state information (critical, neutral, active). Typography and iconography follow a clinical, technical register, consistent with hardware built for survival. The overall tone reads as functional equipment that has seen use.",
+    challenge: "NO ROOM FOR ERROR",
     challengeDetail:
-      "Health, oxygen, airship telemetry and threat indicators all had to coexist in a single framed view without overloading the player mid-crisis — while supporting full localisation, where text expansion alone pushes elements 30–40%, and surfacing the airship management system in the same visual space.",
-    approach: "A strict ten-second hierarchy, with localisation built into the system from day one.",
+      "There were various constraints from the start of the project. The HUD was embedded directly inside the player character's helmet. Every element had to fit within a framed view without causing visual overload. Full localization support added a further constraint, since text expansion can increase UI element size by 30–40%. The airship management system also needed to share this same visual space.",
+    approach: "PROCESS",
     approachDetail:
-      "Only information the player needs to survive in the next ten seconds occupies prime visual real estate; everything else is demoted or summoned. Every component was built with text-expansion buffers and any layout that would break on longer strings was flagged before implementation. The helmet HUD shipped without major structural revision, localisation testing passed across four languages without layout breaks, and the interface was singled out in early press coverage of the game's visual identity.",
-    credits: "Lead UI/UX Designer at Far From Home — with the game producer and Art Director",
+      "I built a moodboard from sci-fi cinema, real military HUD systems and existing survival games, which I then presented this to the producer and Art Director to find a tone. The primary color and typeface were already set when I joined the project. I proposed and refined a secondary color palette to add hierarchy to the display. The primary palette reads as interface chrome. The secondary palette communicates state. Additionally, localization had to be taken into account. Every component included text expansion buffers, and any layout at risk of breaking under longer strings was flagged before implementation.",
+    summaryTitle: "OUTCOME",
+    summary:
+      "Forever Skies went on to a warm reception from players following release. The interface received specific mentions in early press coverage of the game's visual identity. This was the first project of this scale I worked on and it taught me a great deal.",
+    credits: "LEAD UI/UX DESIGNER AT FAR FROM HOME",
     shots: [
-      { src: fs2, caption: "Helmet HUD — survival readouts inside a single framed view." },
-      { src: fs3, caption: "Airship telemetry surfaced in the same visual space." },
-      { src: fs4, caption: "Secondary palette carrying state: critical, neutral, active." },
-      { src: fs5, caption: "Management screens under localisation constraints." },
-    ],
-    process: [
-      { src: fs6, caption: "Moodboard" },
-      { src: fs3, caption: "Hierarchy" },
-      { src: fs2, caption: "Shipped HUD" },
+      { src: fs1.url, caption: "HELMET HUD" },
+      { src: fs2.url, caption: "SCANNER" },
+      { src: fs3.url, caption: "BLUEPRINTS SELECTION" },
+      { src: fs4.url, caption: "RESEARCH STATION UI" },
     ],
   },
   {
     slug: "the-dust",
     index: "06",
-    title: "The Dust",
-    tagline: "Logo, main menu and HUD for a fictional sci-fi FPS.",
-    cover: dust1,
-    platform: "PC / Console",
-    year: "2022",
-    category: "Sci-fi FPS",
-    role: "UI/UX Designer",
-    tools: "Concept",
-    duration: "Self-initiated",
-    artDirectionTitle: "Sleek lines, transparent surfaces",
+    title: "AAA FPS (UNANNOUNCED)",
+    tagline: "I worked on this unannounced AAA FPS, combining dark fantasy mysticism with '80s action cinema, for over a year. It was being built in Unreal Engine 5, in partnership with a first-party studio owned by a big publisher. As Lead UI Designer, I owned the full UI roadmap: visual language, design system and screen work, from pre-production through early production stages. Sadly, the project was cancelled during early production when the partner studio closed as part of a broader restructuring. The cancellation was unrelated to the UI team's output.",
+    cover: aaaThumb.url,
+    platform: "PC/ Console",
+    year: "2025 - 2026",
+    category: "PROJECT & ROLE",
+    role: "Lead UI Designer",
+    tools: "Figma",
+    duration: "2025 - 2026",
+    artDirectionTitle: "HEAVY BUT FUNCTIONAL",
     artDirection:
-      "Orbitron set the tone — futuristic and geometric enough to carry the sci-fi premise — paired with a near-monochromatic palette of black, white and shades of blue. Sleek lines, transparent surfaces and motion do the work that colour usually would, following a moodboard drawn from Halo, Battlefield and Call of Duty.",
-    challenge: "Make a menu that looks futuristic without becoming hard to use.",
+      "The visual direction combined two references: dark fantasy mysticism and '80s action cinema, which was rather unorthodox. Typography and iconography stayed heavy and functional. The colors were bold, matching the overall direction. Occult and mystical motifs were applied throughout in-game systems. ",
+    challenge: "CONSTRAINTS",
     challengeDetail:
-      "Sci-fi interface tropes reward spectacle, but the same menu had to stay comfortable to navigate on both PC and console, where input models and reading distances differ sharply.",
-    approach: "Research, sketch, wireframe, then test the usability before adding the shine.",
+      "The project required coordination between two studios in different time zones, with no in-person contact. Alignment depended on weekly calls with the Art Directors covering progress, feedback, and brainstorming, plus messaging tools for day-to-day communication. Every UI decision had to be documented clearly enough to be reviewed and understood by both parties.",
+    approach: "PROCESS",
     approachDetail:
-      "I researched military and sci-fi interfaces across film, games and real hardware, sketched competing concepts and shared them for feedback, then built low-fidelity wireframes and prototypes to test navigation across devices. Only after the flow held up did the transparency, linework and animation go on top.",
-    credits: "Self-initiated project — logo, main menu and HUD by Kamil Jamiolkowski",
+      "Early production covered three areas. First, a UI pipeline for cross-studio work: file structures, naming conventions, and a review schedule. Second, a design system defining visual rules for typography, iconography, and color. Third, iteration on core screens: early HUD layouts and menu flows, tested and revised across multiple rounds of internal and partner-studio feedback. Exploration volume was high. A large number of UI concepts were prototyped and reviewed before the team converged on a direction.",
+    summaryTitle: "WHAT REMAINS",
+    summary:
+      "The game was cancelled before release; the interface work did not go to market. What remains: a UI pipeline built for cross-studio production, a design system built from the ground up, and a body of prototypes produced under real production constraints. The project confirmed a working method and taught me a lot about collaboration between two distant teams.",
+    credits: "LEAD UI DESIGNER AT GRIP STUDIOS",
     shots: [
-      { src: dust2, caption: "Main menu — sleek linework and transparent surfaces." },
-      { src: dust3, caption: "Logo and identity study." },
-      { src: dust4, caption: "In-game HUD layout." },
-      { src: dust5, caption: "Secondary menu states." },
+      { src: aaa4.url, caption: "MAXIMUM DENSITY OF UI ELEMENTS" },
+      { src: aaa5.url, caption: "DEFAULT INTERFACE LAYOUT" },
+      { src: aaa6.url, caption: "LOW HEALTH EFFECT" },
     ],
     process: [
-      { src: dust6, caption: "Moodboard" },
-      { src: dust4, caption: "Wireframe" },
-      { src: dust2, caption: "Final" },
+      { src: aaa1.url, caption: "UI EXPLORATION EXAMPLE" },
+      { src: aaa2.url, caption: "UI EXPLORATION EXAMPLE" },
+      { src: aaa3.url, caption: "UI EXPLORATION EXAMPLE" },
     ],
   },
 ];
+
+const ORDER = [
+  "the-dust",
+  "biotech-corp",
+  "sancticide",
+  "project-ice",
+  "battlefield-mobile",
+  "forever-skies",
+];
+
+export const caseStudies: CaseStudy[] = ORDER.map(
+  (slug, i) => {
+    const study = caseStudiesUnordered.find((c) => c.slug === slug)!;
+    return { ...study, index: String(i + 1).padStart(2, "0") };
+  },
+);
+
+
 
 export const getCaseStudy = (slug: string) => caseStudies.find((c) => c.slug === slug);
 

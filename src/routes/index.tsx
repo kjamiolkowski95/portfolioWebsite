@@ -27,7 +27,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div>
-      <section className="grain relative flex min-h-[78vh] items-end overflow-hidden border-b border-line px-5 pb-12 pt-32 md:min-h-[86vh] md:px-10 md:pb-16">
+      <section className="grain relative flex min-h-[78vh] items-end overflow-hidden border-b border-line pb-12 pt-32 md:min-h-[86vh] md:pb-16">
         <img
           src={heroArt}
           alt=""
@@ -38,7 +38,7 @@ function Index() {
         />
         <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-background via-background/55 to-background/10" />
         <CornerMarks />
-        <div className="relative z-[3] w-full">
+        <div className="relative z-[3] mx-auto w-full max-w-[1920px] px-5 md:px-10">
           <motion.p
             className="label text-accent"
             initial={{ opacity: 0, y: 16 }}
@@ -63,16 +63,15 @@ function Index() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           >
-            <p className="label text-foreground">UX/UI Designer — Games</p>
+            <p className="label text-foreground">Game UX/UI Designer</p>
             <p className="max-w-md text-sm text-muted-foreground">
-              Interface systems, HUDs and menu architecture built to stay inside the fiction. Based
-              in Warsaw, working with studios worldwide.
+              7+ years of experience in UI art direction, HUD design, and menu architecture across AAA, AA, and mobile games. Based in Poland.
             </p>
           </motion.div>
         </div>
       </section>
 
-      <section id="work" className="scroll-mt-16 px-5 py-14 md:px-10 md:py-20">
+      <section id="work" className="scroll-mt-16 mx-auto max-w-[1920px] px-5 py-14 md:px-10 md:py-20">
         <Reveal>
           <SectionLabel n="01">Selected Work</SectionLabel>
         </Reveal>
@@ -85,31 +84,27 @@ function Index() {
         </div>
       </section>
 
-      <section id="about" className="scroll-mt-16 border-t border-line px-5 py-14 md:px-10 md:py-20">
+      <section id="about" className="scroll-mt-16 mx-auto max-w-[1920px] border-t border-line px-5 py-14 md:px-10 md:py-20">
         <Reveal>
-          <SectionLabel n="02">About</SectionLabel>
+          <SectionLabel n="02">About me</SectionLabel>
         </Reveal>
         <Reveal delay={0.05}>
           <p className="mt-8 max-w-3xl text-lg leading-relaxed md:text-2xl">
-            I design interfaces for games — HUDs, menus, and the in-world panels players never think
-            of as UI. Eight years across survival, RPG, racing and horror titles, mostly embedded
-            with small teams alongside art direction.
+            Throughout my career, I've had the opportunity to work on major titles as well as support smaller studios.
           </p>
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
-            My working rule is simple: the interface should sound like the world it lives in. That
-            usually means fewer elements, harder contrast, and typography that carries the tone
-            before a single label is read.
+            When designing interfaces, my top priority is preserving immersion. I value close collaboration with both Art Directors and UI programmers, always looking for solutions that stay true to the overall vision, are realistic to implement, and, above all, are useful to the player.
           </p>
         </Reveal>
 
         <div className="mt-12 grid grid-cols-1 gap-px bg-line sm:grid-cols-2 lg:grid-cols-4">
           {[
-            ["HUD Systems", "Diegetic and non-diegetic readouts, alert hierarchies."],
-            ["Menu Architecture", "Loadouts, maps, settings, controller-first flows."],
-            ["UX Research", "Playtest instrumentation, comprehension testing."],
-            ["UI Art Direction", "Type systems, iconography, motion language."],
+            ["INTERFACE DESIGN", "Information architecture, flows, logic"],
+            ["PLAYER EXPERIENCE", "Playtesting, comprehension, clarity"],
+            ["VISUAL SYSTEMS", "Design language, consistency, scale"],
+            ["PLATFORM ADAPTATION", "PC, console, safe zones, input methods"],
           ].map(([t, d]) => (
             <div key={t} className="bg-background px-5 py-8">
               <p className="display text-xl">{t}</p>
@@ -121,29 +116,59 @@ function Index() {
 
       <section
         id="contact"
-        className="scroll-mt-16 border-t border-line px-5 py-14 md:px-10 md:py-20"
+        className="scroll-mt-16 mx-auto max-w-[1920px] border-t border-line px-5 py-14 md:px-10 md:py-20"
       >
         <Reveal>
           <SectionLabel n="03">Contact</SectionLabel>
         </Reveal>
         <Reveal delay={0.05}>
           <p className="mt-8 max-w-2xl text-lg md:text-2xl">
-            Currently taking on one project per quarter — contract or embedded with your team.
+            Available for contract as well as full-time projects.
           </p>
         </Reveal>
-        <div className="mt-12 grid grid-cols-1 gap-px bg-line sm:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-px bg-line sm:grid-cols-2">
           {[
-            ["Email", "kamil@jamiolkowski.studio", "mailto:kamil@jamiolkowski.studio"],
-            ["ArtStation", "artstation.com/kamilj", "https://artstation.com"],
-            ["LinkedIn", "linkedin.com/in/kamilj", "https://linkedin.com"],
-          ].map(([label, value, href]) => (
+            {
+              label: "Email",
+              value: "kamil.jamiolkowski@gmail.com",
+              href: "mailto:kamil.jamiolkowski@gmail.com",
+              external: false,
+            },
+            {
+              label: "LinkedIn",
+              value: "Kamil Jamiolkowski",
+              href: "https://www.linkedin.com/in/kamil-jamiolkowski/",
+              external: true,
+            },
+          ].map((item) => (
             <a
-              key={label}
-              href={href}
-              className="group bg-background px-5 py-8 transition-colors duration-300 hover:bg-surface"
+              key={item.label}
+              href={item.href}
+              {...(item.external
+                ? { target: "_blank", rel: "noopener noreferrer" }
+                : {})}
+              className="group flex items-start justify-between gap-4 bg-background px-5 py-8 transition-colors duration-300 hover:bg-surface"
             >
-              <p className="label text-muted-foreground">{label}</p>
-              <p className="mt-3 break-words font-mono text-sm text-foreground">{value}</p>
+              <span>
+                <p className="label text-muted-foreground">{item.label}</p>
+                <p className="mt-3 break-words font-mono text-sm text-foreground">
+                  {item.value}
+                </p>
+              </span>
+              {item.external && (
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  className="mt-1 h-4 w-4 shrink-0 text-muted-foreground transition-colors duration-300 group-hover:text-accent"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M7 17L17 7M17 7H8M17 7v9" />
+                </svg>
+              )}
             </a>
           ))}
         </div>

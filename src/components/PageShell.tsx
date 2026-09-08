@@ -31,9 +31,9 @@ export function PageShell() {
           </motion.div>
         </AnimatePresence>
       </main>
-      <footer className="border-t border-line px-5 py-8 md:px-10">
-        <p className="label text-muted-foreground">
-          © {new Date().getFullYear()} Kamil Jamiolkowski — UX/UI Designer, Games
+      <footer className="border-t border-line">
+        <p className="label mx-auto max-w-[1920px] px-5 py-8 text-muted-foreground md:px-10">
+          © 2026 KAMIL JAMIOLKOWSKI
         </p>
       </footer>
     </>
