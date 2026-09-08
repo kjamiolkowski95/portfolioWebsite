@@ -4,6 +4,7 @@ import biotech3 from "@/assets/work/biotech-3.jpg";
 import biotech4 from "@/assets/work/biotech-4.jpg";
 import biotech5 from "@/assets/work/biotech-5.jpg";
 import biotech6 from "@/assets/work/biotech-6.jpg";
+import iceThumb from "@/assets/work/ice-thumb.png";
 import ice1 from "@/assets/work/ice-1.jpg";
 import ice2 from "@/assets/work/ice-2.jpg";
 import ice3 from "@/assets/work/ice-3.jpg";
@@ -98,7 +99,7 @@ export const caseStudies: CaseStudy[] = [
     index: "02",
     title: "Project: ICE",
     tagline: "Survival interface language for a frozen wasteland and an underground seed bank.",
-    cover: ice1,
+    cover: iceThumb,
     platform: "Personal",
     year: "2024",
     category: "Survival",
@@ -116,15 +117,13 @@ export const caseStudies: CaseStudy[] = [
       "Pre-production covered three fronts: story structure and gameplay loop, visual direction through reference work, and early HUD and menu mockups that test information density against the stark environment. Only once the survival systems held up did the interface start taking shape around them.",
     credits: "Self-initiated project — game design, narrative and interface design by Kamil Jamiolkowski",
     shots: [
-      { src: ice2, caption: "Frozen exterior — the world the interface has to stay colder than." },
       { src: ice3, caption: "Shelter interior, the seed bank turned refuge." },
       { src: ice4, caption: "Early HUD concept, colour reserved for state." },
       { src: ice5, caption: "Menu exploration against a high-contrast environment." },
     ],
     process: [
-      { src: ice6, caption: "Moodboard" },
-      { src: ice4, caption: "HUD concept" },
-      { src: ice3, caption: "Screen study" },
+      { src: ice1, caption: "Moodboard" },,
+      { src: ice2, caption: "Screen study" },
     ],
   },
   {
