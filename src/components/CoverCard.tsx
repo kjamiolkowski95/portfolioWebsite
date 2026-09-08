@@ -27,13 +27,12 @@ export function CoverCard({ study, priority }: { study: CaseStudy; priority?: bo
           <div className="flex flex-wrap justify-end gap-2">
             <Pill className="border-white/50 bg-black/55 text-white">{study.platform}</Pill>
             <Pill className="border-white/50 bg-black/55 text-white">{study.year}</Pill>
-            <Pill className="border-white/50 bg-black/55 text-white">{study.category}</Pill>
+            <Pill className="border-white/50 bg-black/55 text-white">{study.tools}</Pill>
           </div>
         </div>
 
         <div className="transition-opacity duration-[350ms] md:opacity-0 md:group-hover:opacity-100">
           <h3 className="display text-3xl text-white md:text-4xl">{study.title}</h3>
-          <p className="label mt-2 text-white/70">{study.tagline}</p>
         </div>
       </div>
     </Link>
