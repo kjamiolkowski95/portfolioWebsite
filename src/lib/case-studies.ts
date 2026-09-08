@@ -132,7 +132,7 @@ export const caseStudies: CaseStudy[] = [
     process: [
       { src: ice1, caption: "Moodboard" },
       { src: ice2, caption: "Screen study"},
-      { src: ice6 caption: "HUD layering"},
+      { src: ice6, caption: "HUD layering"},
     ],
   },
   {
