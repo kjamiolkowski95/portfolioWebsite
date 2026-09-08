@@ -4,6 +4,7 @@ import biotech3 from "@/assets/work/biotech-3.jpg";
 import biotech4 from "@/assets/work/biotech-4.jpg";
 import biotech5 from "@/assets/work/biotech-5.jpg";
 import biotech6 from "@/assets/work/biotech-6.jpg";
+import iceThumb from "@/assets/work/ice-thumb.png";
 import ice1 from "@/assets/work/ice-1.jpg";
 import ice2 from "@/assets/work/ice-2.jpg";
 import ice3 from "@/assets/work/ice-3.jpg";
@@ -41,12 +42,14 @@ export type CaseStudy = {
   title: string;
   tagline: string;
   cover: string;
-  platform: string;
+  type: string;
   year: string;
-  category: string;
+  genre: string;
   role: string;
   tools: string;
   duration: string;
+  overviewTitle: string;
+  overview: string;
   artDirectionTitle: string;
   artDirection: string;
   challenge: string;
@@ -97,34 +100,35 @@ export const caseStudies: CaseStudy[] = [
     slug: "project-ice",
     index: "02",
     title: "Project: ICE",
-    tagline: "Survival interface language for a frozen wasteland and an underground seed bank.",
-    cover: ice1,
-    platform: "Personal",
+    tagline: "The game is set in a harsh, frozen wasteland where a small group of survivors has taken refuge in an underground seed bank, now their shelter. For decades, they have struggled to endure the relentless forces of nature, fending off wild animals, diseases, and starvation. Mysteriously, supplies occasionally emerge in scattered locations across the icy landscape. A select group of searchers is tasked with finding these vital resources and returning them to the base. As the sole lifeline for survival, these prospectors are held in high regard and are essential to the community's survival.",
+    cover: iceThumb,
+    type: "Personal",
     year: "2024",
-    category: "Survival",
+    genre: "Survival",
     role: "UI/UX Designer, Game Designer",
-    tools: "Pre-production",
+    tools: "Figma",
     duration: "Ongoing",
+    overviewTitle: "Story",
+    overview: "We play as a Seeker who loses his companion and gets badly injured during a supply run. With his supplies destroyed, he knows he won’t make it back to the bunker. As he lies dying in the snow, he notices fresh human footprints. That shouldn’t be possible, no one else is supposed to be outside. He wakes up later in the infirmary, alive and heavily bandaged. The medic tells him he was found unconscious and suffering from severe hypothermia just before reaching the bunker. Somehow, he survived. But the footprints remain unexplained.",
     artDirectionTitle: "Colder than the world outside",
     artDirection:
-      "Moodboards pulled from Nordic landscape photography, real field survival equipment and brutalist architecture — a language that reads as desolate but functional. The UI is deliberately minimal and monochromatic, with colour used only as a pure state indicator. The single rule holding it together: nothing in the interface should ever feel warmer than the world outside.",
-    challenge: "A survival game lives or dies by the plausibility of its systems.",
+      "The game features realistic and immersive graphics that bring the icy island landscape to life, complemented by detailed character models and carefully designed environments. Atmospheric lighting and dynamic weather effects further enhance the sense of immersion, creating a believable and engaging world.",
+    challenge: "Challenge",
     challengeDetail:
-      "Warmth, resource management, weather and wildlife all interact, and the interface has to make those relationships legible without turning the screen into a spreadsheet. Getting the world's internal logic wrong first would have made any HUD work worthless.",
-    approach: "Systems and narrative resolved before a single UI element was drawn.",
+      "Personal projects give me full ownership of every design decision. Without stakeholders or a creative director to guide the work, I have to challenge and justify my own decisions. This pushes me to think more critically and strengthens my design instincts. The game is heavily story-driven, and the narrative is still in its early stages. I’m building a story around survival, mystery, and human resilience, with the goal of making the narrative an important part of the gameplay and overall experience.",
+    approach: "Approach",
     approachDetail:
       "Pre-production covered three fronts: story structure and gameplay loop, visual direction through reference work, and early HUD and menu mockups that test information density against the stark environment. Only once the survival systems held up did the interface start taking shape around them.",
-    credits: "Self-initiated project — game design, narrative and interface design by Kamil Jamiolkowski",
+    credits: "Self-initiated project — game design, narrative and interface design by me",
     shots: [
-      { src: ice2, caption: "Frozen exterior — the world the interface has to stay colder than." },
-      { src: ice3, caption: "Shelter interior, the seed bank turned refuge." },
-      { src: ice4, caption: "Early HUD concept, colour reserved for state." },
-      { src: ice5, caption: "Menu exploration against a high-contrast environment." },
+      { src: ice3, caption: "Early HUD concept, exploration" },
+      { src: ice4, caption: "Example of a diegetic interface." },
+      { src: ice5, caption: "Example of a diegetic interface." },
     ],
     process: [
-      { src: ice6, caption: "Moodboard" },
-      { src: ice4, caption: "HUD concept" },
-      { src: ice3, caption: "Screen study" },
+      { src: ice1, caption: "Moodboard" },
+      { src: ice2, caption: "Screen study"},
+      { src: ice6, caption: "HUD layering"},
     ],
   },
   {

@@ -45,7 +45,7 @@ function Index() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           >
-            Portfolio — Vol. 06
+            Portfolio
           </motion.p>
           <motion.h1
             className="display mt-6 text-[15vw] leading-[0.86] md:text-[10.5vw]"
