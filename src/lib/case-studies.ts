@@ -100,8 +100,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "project-ice",
     index: "02",
     title: "Project: ICE",
-    tagline: "The game is set in a harsh, frozen wasteland where a small group of survivors has taken refuge in an underground seed bank, now their shelter. For decades, they have struggled to endure the relentless forces of nature, fending off wild animals, diseases, and starvation."
-    "Mysteriously, supplies occasionally emerge in scattered locations across the icy landscape. A select group of searchers is tasked with finding these vital resources and returning them to the base. As the sole lifeline for survival, these prospectors are held in high regard and are essential to the community's survival.",
+    tagline: "The game is set in a harsh, frozen wasteland where a small group of survivors has taken refuge in an underground seed bank, now their shelter. For decades, they have struggled to endure the relentless forces of nature, fending off wild animals, diseases, and starvation. Mysteriously, supplies occasionally emerge in scattered locations across the icy landscape. A select group of searchers is tasked with finding these vital resources and returning them to the base. As the sole lifeline for survival, these prospectors are held in high regard and are essential to the community's survival.",
     cover: iceThumb,
     type: "Personal",
     year: "2024",
@@ -110,16 +109,13 @@ export const caseStudies: CaseStudy[] = [
     tools: "Figma",
     duration: "Ongoing",
     overviewTitle: "Story",
-    overview: "We play as a Seeker who loses his companion and gets badly injured during a supply run. With his supplies destroyed, he knows he won’t make it back to the bunker." 
-    "As he lies dying in the snow, he notices fresh human footprints. That shouldn’t be possible, no one else is supposed to be outside." 
-    "He wakes up later in the infirmary, alive and heavily bandaged. The medic tells him he was found unconscious and suffering from severe hypothermia just before reaching the bunker. Somehow, he survived. But the footprints remain unexplained.",
+    overview: "We play as a Seeker who loses his companion and gets badly injured during a supply run. With his supplies destroyed, he knows he won’t make it back to the bunker. As he lies dying in the snow, he notices fresh human footprints. That shouldn’t be possible, no one else is supposed to be outside. He wakes up later in the infirmary, alive and heavily bandaged. The medic tells him he was found unconscious and suffering from severe hypothermia just before reaching the bunker. Somehow, he survived. But the footprints remain unexplained.",
     artDirectionTitle: "Colder than the world outside",
     artDirection:
       "The game features realistic and immersive graphics that bring the icy island landscape to life, complemented by detailed character models and carefully designed environments. Atmospheric lighting and dynamic weather effects further enhance the sense of immersion, creating a believable and engaging world.",
     challenge: "Challenge",
     challengeDetail:
-      "Personal projects give me full ownership of every design decision. Without stakeholders or a creative director to guide the work, I have to challenge and justify my own decisions. This pushes me to think more critically and strengthens my design instincts."
-      "The game is heavily story-driven, and the narrative is still in its early stages. I’m building a story around survival, mystery, and human resilience, with the goal of making the narrative an important part of the gameplay and overall experience.",
+      "Personal projects give me full ownership of every design decision. Without stakeholders or a creative director to guide the work, I have to challenge and justify my own decisions. This pushes me to think more critically and strengthens my design instincts. The game is heavily story-driven, and the narrative is still in its early stages. I’m building a story around survival, mystery, and human resilience, with the goal of making the narrative an important part of the gameplay and overall experience.",
     approach: "Approach",
     approachDetail:
       "Pre-production covered three fronts: story structure and gameplay loop, visual direction through reference work, and early HUD and menu mockups that test information density against the stark environment. Only once the survival systems held up did the interface start taking shape around them.",
@@ -132,7 +128,7 @@ export const caseStudies: CaseStudy[] = [
     process: [
       { src: ice1, caption: "Moodboard" },
       { src: ice2, caption: "Screen study"},
-      { src: ice6 caption: "HUD layering"},
+      { src: ice6, caption: "HUD layering"},
     ],
   },
   {
