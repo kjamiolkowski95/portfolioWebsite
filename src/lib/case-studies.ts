@@ -10,42 +10,42 @@ import ice3 from "@/assets/work/ice-3.jpg";
 import ice4 from "@/assets/work/ice-4.jpg";
 import ice5 from "@/assets/work/ice-5.jpg";
 import ice6 from "@/assets/work/ice-6.jpg";
-import iceThumb from "@/assets/work/ice-thumb.png.asset.json";
-import iceNew1 from "@/assets/work/ice-new-1.png.asset.json";
-import iceNew2 from "@/assets/work/ice-new-2.png.asset.json";
-import iceNew3 from "@/assets/work/ice-new-3.png.asset.json";
-import iceNew4 from "@/assets/work/ice-new-4.jpg.asset.json";
-import iceNew5 from "@/assets/work/ice-new-5.jpg.asset.json";
+import iceThumb from "@/assets/work/ice-thumb.png";
+import iceNew1 from "@/assets/work/ice-new-1.png";
+import iceNew2 from "@/assets/work/ice-new-2.png";
+import iceNew3 from "@/assets/work/ice-new-3.png";
+import iceNew4 from "@/assets/work/ice-new-4.jpg";
+import iceNew5 from "@/assets/work/ice-new-5.jpg";
 import sanc1 from "@/assets/work/sanc-1.jpg";
 import sanc2 from "@/assets/work/sanc-2.png";
 import sanc3 from "@/assets/work/sanc-3.png";
 import sanc4 from "@/assets/work/sanc-4.png";
 import sanc5 from "@/assets/work/sanc-5.png";
 import sanc6 from "@/assets/work/sanc-6.png";
-import sancThumb from "@/assets/work/sanc-thumb.png.asset.json";
-import sancNew1 from "@/assets/work/sanc-new-1.png.asset.json";
-import sancNew2 from "@/assets/work/sanc-new-2.png.asset.json";
-import sancNew3 from "@/assets/work/sanc-new-3.png.asset.json";
-import sancNew4 from "@/assets/work/sanc-new-4.png.asset.json";
-import sancNew5 from "@/assets/work/sanc-new-5.png.asset.json";
-import bfmThumb from "@/assets/work/battlefield-thumb.png.asset.json";
-import bf1 from "@/assets/work/bf-1.png.asset.json";
-import bf2 from "@/assets/work/bf-2.png.asset.json";
-import bf3 from "@/assets/work/bf-3.png.asset.json";
-import bf4 from "@/assets/work/bf-4.png.asset.json";
-import bf5 from "@/assets/work/bf-5.png.asset.json";
-import fsThumb from "@/assets/work/forever-skies-thumb.png.asset.json";
-import fs1 from "@/assets/work/forever-1.png.asset.json";
-import fs2 from "@/assets/work/forever-2.png.asset.json";
-import fs3 from "@/assets/work/forever-3.png.asset.json";
-import fs4 from "@/assets/work/forever-4.png.asset.json";
-import aaaThumb from "@/assets/work/aaa-thumb.png.asset.json";
-import aaa4 from "@/assets/work/aaa-4.png.asset.json";
-import aaa5 from "@/assets/work/aaa-5.png.asset.json";
-import aaa6 from "@/assets/work/aaa-6.png.asset.json";
-import aaa1 from "@/assets/work/aaa-1.png.asset.json";
-import aaa2 from "@/assets/work/aaa-2.png.asset.json";
-import aaa3 from "@/assets/work/aaa-3.png.asset.json";
+import sancThumb from "@/assets/work/sanc-thumb.png";
+import sancNew1 from "@/assets/work/sanc-new-1.png";
+import sancNew2 from "@/assets/work/sanc-new-2.png";
+import sancNew3 from "@/assets/work/sanc-new-3.png";
+import sancNew4 from "@/assets/work/sanc-new-4.webp";
+import sancNew5 from "@/assets/work/sanc-new-5.png";
+import bfmThumb from "@/assets/work/battlefield-thumb.png";
+import bf1 from "@/assets/work/bf-1.png";
+import bf2 from "@/assets/work/bf-2.png";
+import bf3 from "@/assets/work/bf-3.png";
+import bf4 from "@/assets/work/bf-4.png";
+import bf5 from "@/assets/work/bf-5.png";
+import fsThumb from "@/assets/work/forever-skies-thumb.png";
+import fs1 from "@/assets/work/forever-1.webp";
+import fs2 from "@/assets/work/forever-2.png";
+import fs3 from "@/assets/work/forever-3.png";
+import fs4 from "@/assets/work/forever-4.png";
+import aaaThumb from "@/assets/work/aaa-thumb.webp";
+import aaa4 from "@/assets/work/aaa-4.webp";
+import aaa5 from "@/assets/work/aaa-5.webp";
+import aaa6 from "@/assets/work/aaa-6.webp";
+import aaa1 from "@/assets/work/aaa-1.webp";
+import aaa2 from "@/assets/work/aaa-2.webp";
+import aaa3 from "@/assets/work/aaa-3.webp";
 import dust1 from "@/assets/work/dust-1.jpg";
 import dust2 from "@/assets/work/dust-2.jpg";
 import dust3 from "@/assets/work/dust-3.jpg";
@@ -122,7 +122,7 @@ const caseStudiesUnordered: CaseStudy[] = [
     title: "Project: ICE",
     tagline:
       "Project: ICE takes place in a frozen wasteland where a small group of survivors holds out in a converted underground seed bank. Supplies occasionally turn up scattered across the ice, and a select group of searchers (prospectors, essentially) are sent out to find them and bring them back. They're the only thing keeping the community alive.",
-    cover: iceThumb.url,
+    cover: iceThumb,
     platform: "Personal",
     year: "2024",
     category: "Setting & Premise",
@@ -143,13 +143,13 @@ const caseStudiesUnordered: CaseStudy[] = [
       "Project: ICE is still ongoing, with the story and interface developing in parallel. The core constraint continues to show through every mockup so far and to guide the remaining screens.",
     credits: "SELF-INITIATED PROJECT",
     shots: [
-      { src: iceNew1.url, caption: "HUD CARRYING OXYGEN, HEALTH, COLD AND STORM WARNINGS" },
-      { src: iceNew2.url, caption: "BIO PARAMETERS AND VITALS ON A HANDHELD TABLET" },
-      { src: iceNew3.url, caption: "DIEGETIC NAVIGATION - HOLOGRAPHIC WRIST MAP " },
+      { src: iceNew1, caption: "HUD CARRYING OXYGEN, HEALTH, COLD AND STORM WARNINGS" },
+      { src: iceNew2, caption: "BIO PARAMETERS AND VITALS ON A HANDHELD TABLET" },
+      { src: iceNew3, caption: "DIEGETIC NAVIGATION - HOLOGRAPHIC WRIST MAP " },
     ],
     process: [
-      { src: iceNew4.url, caption: "CONCEPT SHEET, ENVIRONMENT AND CHARACTER DESIGN EXPLORATION" },
-      { src: iceNew5.url, caption: "REFERENCE BOARD - TOPOGRAPHY, ARCHITECTURE AND THE FACILITY" },
+      { src: iceNew4, caption: "CONCEPT SHEET, ENVIRONMENT AND CHARACTER DESIGN EXPLORATION" },
+      { src: iceNew5, caption: "REFERENCE BOARD - TOPOGRAPHY, ARCHITECTURE AND THE FACILITY" },
     ],
   },
   {
@@ -158,7 +158,7 @@ const caseStudiesUnordered: CaseStudy[] = [
     title: "Sancticide",
     tagline:
       "Sancticide is a dark post-apocalyptic fantasy RPG for PC, adapted from Michał Gołkowski's \"Komornik\" novels. It's set in a world on the brink of annihilation. My job as UI/UX Team Lead was to take that existing world and turn it into a working interface, leading the team from early exploration to production-ready assets in Unreal Engine 5.",
-    cover: sancThumb.url,
+    cover: sancThumb,
     platform: "PC",
     year: "2024",
     category: "Setting & Scope",
@@ -179,13 +179,13 @@ const caseStudiesUnordered: CaseStudy[] = [
       "Sancticide didn't land well at launch. The game's mechanics needed more polish than the studio's timeline and resources could support. It was a hard outcome to sit with, given how much work and time the whole team put into it. But it was also one of the more useful lessons of my career. Sometimes ambition outpaces capacity.",
     credits: "UI/UX TEAM LEAD AT RED SQUARE GAMES",
     shots: [
-      { src: sancNew1.url, caption: "HUD" },
-      { src: sancNew2.url, caption: "INVENTORY SCREEN" },
-      { src: sancNew3.url, caption: "MAIN MENU" },
+      { src: sancNew1, caption: "HUD" },
+      { src: sancNew2, caption: "INVENTORY SCREEN" },
+      { src: sancNew3, caption: "MAIN MENU" },
     ],
     process: [
-      { src: sancNew4.url, caption: "MAP" },
-      { src: sancNew5.url, caption: "ABILITY WHEEL" },
+      { src: sancNew4, caption: "MAP" },
+      { src: sancNew5, caption: "ABILITY WHEEL" },
     ],
   },
   {
@@ -194,7 +194,7 @@ const caseStudiesUnordered: CaseStudy[] = [
     title: "Battlefield Mobile",
     tagline:
       "In this project, I worked on Warheroes, a monetization feature for Battlefield Mobile. The scope covered stakeholder requirements, user behavior analysis, feature logic, and final UI design.",
-    cover: bfmThumb.url,
+    cover: bfmThumb,
     platform: "Mobile",
     year: "2023",
     category: "Features & Scope",
@@ -215,13 +215,13 @@ const caseStudiesUnordered: CaseStudy[] = [
       "Warheroes launched within the planned release window. The project gave me direct experience balancing business requirements against player experience within an existing monetization system.",
     credits: "UX/UI DESIGNER AT DRAGONS' LAKE FOR EA",
     shots: [
-      { src: bf2.url, caption: "HERO LOADOUT" },
-      { src: bf3.url, caption: "HERO-SPECIFIC CURRENCY" },
-      { src: bf5.url, caption: "ITEMS SHOP" },
+      { src: bf2, caption: "HERO LOADOUT" },
+      { src: bf3, caption: "HERO-SPECIFIC CURRENCY" },
+      { src: bf5, caption: "ITEMS SHOP" },
     ],
     process: [
-      { src: bf1.url, caption: "SPLASH SCREEN" },
-      { src: bf4.url, caption: "REWARDS" },
+      { src: bf1, caption: "SPLASH SCREEN" },
+      { src: bf4, caption: "REWARDS" },
     ],
   },
   {
@@ -229,7 +229,7 @@ const caseStudiesUnordered: CaseStudy[] = [
     index: "05",
     title: "Forever Skies",
     tagline: "Forever Skies is a first-person survival game set on a post-apocalyptic, ecologically ruined Earth. Players build, upgrade, and fly a high-tech airship, scavenging resources and crafting tools while searching for a cure to save humanity. I was a solo UI and UX Designer at Far From Home, working on the game's full interface.\u00a0",
-    cover: fsThumb.url,
+    cover: fsThumb,
     platform: "PC",
     year: "2023",
     category: "SETTING & ROLE",
@@ -250,10 +250,10 @@ const caseStudiesUnordered: CaseStudy[] = [
       "Forever Skies went on to a warm reception from players following release. The interface received specific mentions in early press coverage of the game's visual identity. This was the first project of this scale I worked on and it taught me a great deal.",
     credits: "LEAD UI/UX DESIGNER AT FAR FROM HOME",
     shots: [
-      { src: fs1.url, caption: "HELMET HUD" },
-      { src: fs2.url, caption: "SCANNER" },
-      { src: fs3.url, caption: "BLUEPRINTS SELECTION" },
-      { src: fs4.url, caption: "RESEARCH STATION UI" },
+      { src: fs1, caption: "HELMET HUD" },
+      { src: fs2, caption: "SCANNER" },
+      { src: fs3, caption: "BLUEPRINTS SELECTION" },
+      { src: fs4, caption: "RESEARCH STATION UI" },
     ],
   },
   {
@@ -261,7 +261,7 @@ const caseStudiesUnordered: CaseStudy[] = [
     index: "06",
     title: "AAA FPS (UNANNOUNCED)",
     tagline: "I worked on this unannounced AAA FPS, combining dark fantasy mysticism with '80s action cinema, for over a year. It was being built in Unreal Engine 5, in partnership with a first-party studio owned by a big publisher. As Lead UI Designer, I owned the full UI roadmap: visual language, design system and screen work, from pre-production through early production stages. Sadly, the project was cancelled during early production when the partner studio closed as part of a broader restructuring. The cancellation was unrelated to the UI team's output.",
-    cover: aaaThumb.url,
+    cover: aaaThumb,
     platform: "PC/ Console",
     year: "2025 - 2026",
     category: "PROJECT & ROLE",
@@ -282,14 +282,14 @@ const caseStudiesUnordered: CaseStudy[] = [
       "The game was cancelled before release; the interface work did not go to market. What remains: a UI pipeline built for cross-studio production, a design system built from the ground up, and a body of prototypes produced under real production constraints. The project confirmed a working method and taught me a lot about collaboration between two distant teams.",
     credits: "LEAD UI DESIGNER AT GRIP STUDIOS",
     shots: [
-      { src: aaa4.url, caption: "MAXIMUM DENSITY OF UI ELEMENTS" },
-      { src: aaa5.url, caption: "DEFAULT INTERFACE LAYOUT" },
-      { src: aaa6.url, caption: "LOW HEALTH EFFECT" },
+      { src: aaa4, caption: "MAXIMUM DENSITY OF UI ELEMENTS" },
+      { src: aaa5, caption: "DEFAULT INTERFACE LAYOUT" },
+      { src: aaa6, caption: "LOW HEALTH EFFECT" },
     ],
     process: [
-      { src: aaa1.url, caption: "UI EXPLORATION EXAMPLE" },
-      { src: aaa2.url, caption: "UI EXPLORATION EXAMPLE" },
-      { src: aaa3.url, caption: "UI EXPLORATION EXAMPLE" },
+      { src: aaa1, caption: "UI EXPLORATION EXAMPLE" },
+      { src: aaa2, caption: "UI EXPLORATION EXAMPLE" },
+      { src: aaa3, caption: "UI EXPLORATION EXAMPLE" },
     ],
   },
 ];
