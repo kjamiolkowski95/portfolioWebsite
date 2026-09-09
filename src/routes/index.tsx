@@ -144,14 +144,24 @@ function Index() {
             <a
               key={item.label}
               href={item.href}
+              onClick={(e) => {
+                // Allow manual text selection: don't follow the link when the
+                // user finished a drag-select instead of a clean click.
+                if (window.getSelection()?.toString()) {
+                  e.preventDefault();
+                }
+              }}
               {...(item.external
                 ? { target: "_blank", rel: "noopener noreferrer" }
                 : {})}
               className="group flex items-start justify-between gap-4 bg-background px-5 py-8 transition-colors duration-300 hover:bg-surface"
             >
-              <span>
+              <span className="min-w-0">
                 <p className="label text-muted-foreground">{item.label}</p>
-                <p className="mt-3 break-words font-mono text-sm text-foreground">
+                <p
+                  className="mt-3 break-words font-mono text-sm text-foreground select-text"
+                  style={{ cursor: "text" }}
+                >
                   {item.value}
                 </p>
               </span>
